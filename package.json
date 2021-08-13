@@ -1,0 +1,23 @@
+{
+  "name": "lgpd-modal",
+  "version": "1.0.0",
+  "description": "Modal para aceite de termos LGPD no seu site/app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvnol/lgpd-modal.git"
+  },
+  "keywords": [
+    "modal",
+    "lgpd"
+  ],
+  "author": "Kevin Oliveira <me@kevinoliveira.com.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kvnol/lgpd-modal/issues"
+  },
+  "homepage": "https://github.com/kvnol/lgpd-modal#readme"
+}

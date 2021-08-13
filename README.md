@@ -1,1 +1,1 @@
-# lgpd-modal
+# LGPD Modal
