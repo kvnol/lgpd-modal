@@ -1,6 +1,6 @@
 {
   "name": "lgpd-modal",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Modal para aceite de termos LGPD no seu site/app",
   "main": "main.js",
   "scripts": {
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/kvnol/lgpd-modal/issues"
   },
-  "homepage": "https://github.com/kvnol/lgpd-modal#readme"
+  "homepage": "https://github.com/kvnol/lgpd-modal#readme",
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
 }
