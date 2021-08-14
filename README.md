@@ -15,13 +15,13 @@ Importe a lib:
 ###### Módulos ES6
 
 ```js
-import { lgpdModal } from 'lgpdmodal';
+import { LGPDModal } from 'lgpdmodal';
 ```
 
 ###### CommonJS
 
 ```js
-const { lgpdModal } = require('lgpdmodal');
+const { LGPDModal } = require('lgpdmodal');
 ```
 
 Inclua em sua aplicação passando alguns [parâmetros](#parâmetros):
@@ -30,10 +30,16 @@ Inclua em sua aplicação passando alguns [parâmetros](#parâmetros):
 const tagmanager = `<script>...</script>`;
 const analytics = `<script>...</script>`;
 
-const lgpd = LGPDModal({
+LGPDModal({
   url: '/politica-de-privacidade',
   scripts: [tagmanager, analytics],
 });
+```
+
+Importe o CSS base, caso queira, em sua aplicação:
+
+```html
+<link rel="stylesheet" href="LGPDModal.css" />
 ```
 
 ### Parâmetros
