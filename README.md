@@ -30,7 +30,7 @@ Inclua em sua aplicação passando alguns [parâmetros](#parâmetros):
 const tagmanager = `<script>...</script>`;
 const analytics = `<script>...</script>`;
 
-lgpdModal({
+const lgpd = LGPDModal({
   url: '/politica-de-privacidade',
   scripts: [tagmanager, analytics],
 });
