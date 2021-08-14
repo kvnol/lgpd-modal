@@ -5,7 +5,7 @@
 ## Instalação
 
 ```sh
-npm install lgpd-modal -s
+npm install lgpdmodal -s
 ```
 
 ## Como usar?
@@ -15,13 +15,13 @@ Importe a lib:
 ###### Módulos ES6
 
 ```js
-import { lgpdModal } from 'lgpd-modal';
+import { lgpdModal } from 'lgpdmodal';
 ```
 
 ###### CommonJS
 
 ```js
-const { lgpdModal } = require('lgpd-modal');
+const { lgpdModal } = require('lgpdmodal');
 ```
 
 Inclua em sua aplicação passando alguns [parâmetros](#parâmetros):
