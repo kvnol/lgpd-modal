@@ -1,6 +1,6 @@
 {
   "name": "lgpdmodal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Modal para aceite de termos LGPD no seu site/app",
   "main": "/src/main.js",
   "scripts": {
