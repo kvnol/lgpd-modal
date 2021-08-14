@@ -1,6 +1,6 @@
 {
   "name": "lgpdmodal",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Modal para aceite de termos LGPD no seu site/app",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -9,12 +9,13 @@
     "dist"
   ],
   "scripts": {
-    "styles": "npx sass --style=compressed src/scss/main.scss dist/LGPDModal.css",
+    "styles": "npx sass --style=compressed src/scss/main.scss dist/lgpdmodal.css",
     "lint": "npx eslint src/js/*.js",
     "build": "npx rollup -c",
     "dev": "npx rollup -c -w",
     "clean": "rm -rf dist/*",
-    "prepublish": "npm run lint && npm run build && npm run styles"
+    "prepublish": "npm run clean && npm run lint && npm run build && npm run styles && npm run docs",
+    "docs": "rm -rf docs/*.css docs/*.js && cp dist/lgpdmodal.css docs && cp dist/lgpdmodal.min.js docs"
   },
   "repository": {
     "type": "git",

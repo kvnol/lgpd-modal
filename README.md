@@ -39,7 +39,7 @@ LGPDModal({
 Importe o CSS base, caso queira, em sua aplicação:
 
 ```html
-<link rel="stylesheet" href="LGPDModal.css" />
+<link rel="stylesheet" href="lgpdmodal.css" />
 ```
 
 ### Parâmetros
