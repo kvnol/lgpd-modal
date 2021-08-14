@@ -1,10 +1,18 @@
 {
   "name": "lgpdmodal",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "description": "Modal para aceite de termos LGPD no seu site/app",
-  "main": "/dist/index.js",
+  "main": "dist/lgpdmodal.umd.js",
+  "module": "dist/lgpdmodal.esm.js",
+  "style": "dist/lgpdmodal.css",
+  "files": [
+    "dist/",
+    "src/",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
-    "styles": "npx sass --style=compressed src/scss/main.scss dist/css/main.min.css",
+    "styles": "npx sass --style=compressed src/scss/main.scss dist/lgpdmodal.css",
     "lint": "npx eslint src/js/*.js",
     "bundle": "npx rollup --config",
     "clean": "rm -rf dist/*",
