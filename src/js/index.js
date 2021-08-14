@@ -39,6 +39,9 @@ const initModal = (options) => {
   }
 };
 
-export default function LGPDModal(options) {
+const LGPDModal = (options) => {
   initModal(options);
-}
+};
+
+/* eslint-disable import/prefer-default-export */
+export { LGPDModal };

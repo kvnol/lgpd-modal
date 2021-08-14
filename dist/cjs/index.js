@@ -60,9 +60,9 @@ const initModal = (options) => {
   }
 };
 
-function LGPDModal(options) {
+const LGPDModal = (options) => {
   initModal(options);
-}
+};
 
-exports['default'] = LGPDModal;
+exports.LGPDModal = LGPDModal;
 //# sourceMappingURL=index.js.map

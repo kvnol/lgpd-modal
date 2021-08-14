@@ -1,6 +1,6 @@
 {
-  "name": "LGPDModal",
-  "version": "2.1.2",
+  "name": "lgpdmodal",
+  "version": "3.0.0",
   "description": "Modal para aceite de termos LGPD no seu site/app",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
