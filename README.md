@@ -1,5 +1,7 @@
 # LGPD Modal
 
+[![npm version](https://badge.fury.io/js/lgpdmodal.svg)](https://badge.fury.io/js/lgpdmodal)
+
 ## Instalação
 
 ```sh
