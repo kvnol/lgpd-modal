@@ -1,5 +1,5 @@
 .modal-lgpd {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -21,7 +21,7 @@
   }
 
   > .dialog {
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
