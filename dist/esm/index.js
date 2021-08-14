@@ -7,7 +7,7 @@ const template = (acceptPolicy, url) => `
 
       <div class="actions">
         <button
-          class="button -filled"
+          class="button"
           data-cookies="accept"
         >
           <span>Aceitar cookies</span>
