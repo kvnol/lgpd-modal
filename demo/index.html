@@ -11,9 +11,12 @@
   <body
     style="background-image: linear-gradient(45deg, black 50%, transparent 50%)"
   >
-    <script src="../dist/main.min.js" async></script>
+    <script src="../dist/index.min.js"></script>
     <script>
-      lgpdModal();
+      const lgpd = new LGPDModal({
+        url: '',
+        scripts: [],
+      });
     </script>
   </body>
 </html>
