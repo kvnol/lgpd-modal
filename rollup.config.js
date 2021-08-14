@@ -1,40 +1,40 @@
-import resolve from '@rollup/plugin-node-resolve';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import { terser } from 'rollup-plugin-terser';
 import babel from '@rollup/plugin-babel';
+import pkg from './package.json';
 
 const config = [];
 
 config.push({
   input: 'src/js/index.js',
+  plugins: [nodeResolve(), babel({ babelHelpers: 'bundled' }), terser()],
   output: {
-    name: 'LGPDModal',
-    file: 'dist/lgpdmodal.umd.js',
+    file: `dist/${pkg.name}.min.js`,
     format: 'umd',
-    extend: true,
-    esModule: 'false',
+    name: 'LGPDModal',
+    esModule: false,
     exports: 'named',
+    sourcemap: true,
   },
-  plugins: [resolve(), babel({ babelHelpers: 'bundled' })],
 });
 
 config.push({
   input: 'src/js/index.js',
-  output: {
-    name: 'LGPDModal',
-    file: 'dist/lgpdmodal.esm.js',
-    format: 'es',
-    exports: 'named',
-  },
-  plugins: [resolve(), babel({ babelHelpers: 'bundled' })],
-});
-
-config.push({
-  input: 'src/js/index.js',
-  output: {
-    name: 'LGPDModal',
-    file: 'dist/lgpdmodal.min.js',
-    format: 'iife',
-  },
-  plugins: [resolve(), babel({ babelHelpers: 'bundled' })],
+  plugins: [nodeResolve()],
+  output: [
+    {
+      dir: 'dist/esm',
+      format: 'esm',
+      exports: 'named',
+      sourcemap: true,
+    },
+    {
+      dir: 'dist/cjs',
+      format: 'cjs',
+      exports: 'named',
+      sourcemap: true,
+    },
+  ],
 });
 
 export default config;
