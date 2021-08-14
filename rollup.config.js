@@ -5,7 +5,7 @@ export default {
   input: 'src/js/index.js',
   output: {
     name: 'LGPDModal',
-    file: 'dist/index.min.js',
+    file: 'dist/index.js',
     format: 'umd',
   },
   plugins: [resolve(), babel({ babelHelpers: 'bundled' })],

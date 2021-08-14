@@ -1,8 +1,8 @@
 {
   "name": "lgpdmodal",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Modal para aceite de termos LGPD no seu site/app",
-  "main": "/src/index.js",
+  "main": "/dist/index.js",
   "scripts": {
     "styles": "npx sass --style=compressed src/scss/main.scss dist/css/main.min.css",
     "lint": "npx eslint src/js/*.js",
